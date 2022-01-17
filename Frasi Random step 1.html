@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATI PERSONALI</title>
+
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PVgiPKVvM_IgDlb4xxwVt85DWTjZ6Ykx7Sksx2S8N56gIJdvF17duvC0OCZ6OYZsHPpu1y82VWovq5ILmFOKCjYhmX1HDUsK_09D4MUV093t4rbMH8hXVv90B5yb7NI1" charset="UTF-8"></script><style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #0099ff;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #0099ff;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        button{
+            background-color: #0207ff;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;}
+
+        </style>
+
+
+
+
+</head>
+<body>
+    <p>INSERIMENTO DATI PERSONALI:</p>
+<div class="container">
+    <form id="frm1" >
+        <label for="nome">nome</label>
+        <input id="nome" type="text" name="nome" value=""><br>
+        <label for="cognome">cognome</label>
+        <input id ="cognome" type="text" name="cognome" value=""><br>
+        <label for="complementooggetto">anno di nascita</label>
+        <input id="co" type="text" name="anno di nascita" value=""><br><br>
+       <!-- <input type="submit" value="Submit"> -->
+        
+       </form>
+
+       <button onclick="CreaUnaFrase()">Inserisci i dati</button>
+
+       <p>nome:</p>
+       <p id="inputnome"></p>
+       <p>cognome:</p>
+       <p id="inputcognome"></p>
+       <p>anno di nascita:</p>
+       <p id="inputCO"></p>
+       
+
+       <p>dati finali:</p>
+       <p id="out"></p>
+
+
+<script>
+
+
+
+
+function CreaUnaFrase() {
+let nome="";
+let cognome="";
+let annodinascita="";
+
+nome=document.getElementById('nome').value;
+document.getElementById('inputnome').innerHTML=nome;
+
+cognome=document.getElementById('cognome').value;
+document.getElementById('inputcognome').innerHTML=cognome;
+
+
+annodinascita=document.getElementById('co').value;
+document.getElementById('inputCO').innerHTML=annodinascita;
+
+let frase="";
+frase=nome+ " "+cognome+ " "+annodinascita;
+
+document.getElementById('out').innerHTML=frase;
+}
+
+
+
+</script>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

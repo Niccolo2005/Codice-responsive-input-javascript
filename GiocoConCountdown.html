@@ -19,8 +19,8 @@
 
  
  
- <p id="out">Tempo</p>
- <p id="nclick">Click</p>
+ <p id="out">Times</p>
+ <p id="nclick">Clicks</p>
  <p id="demolition">3</p>
  <p id="cane">13</p>
 
@@ -32,8 +32,8 @@
  let CosoClick = 0;
  const myInterval = setInterval(pippo,1000);
  const Interval = setInterval(tonno,1000);
- const intervaldue = setInterval(Rubik,13000);
- const intervaltre = setInterval(fill,3000);
+ const NonSo = setInterval(Rubik,13000);
+ const Pollo = setInterval(fill,3000);
  var contatore = 3;
  var bolo = 13;
  
@@ -45,26 +45,26 @@
  document.getElementById("nclick").innerHTML = CosoClick.toString();
  }
 
- function uno() {
+ function pippo() {
  contatore--;
  document.getElementById("demolition").innerHTML = contatore+" ";
  }
  
- function due() {
+ function fill() {
  clearInterval(myInterval)
  clearInterval(Pollo)
- document.getElementById("demolition").innerHTML = "Via!";
+ document.getElementById("demolition").innerHTML = "VIA!";
  document.getElementById("gatto").style.visibility = "visible";
  document.getElementById("cane").style.visibility = "visible";
  
  }
 
- function tre() {
+ function tonno() {
  bolo--;
  document.getElementById("boh").innerHTML = bolo+" ";
  }
 
- function quattro() {
+ function Rubik() {
  document.getElementById("cane").style.visibility = "hidden";
  document.getElementById("gatto").style.visibility = "hidden";
  document.getElementById("demolition").style.visibility = "hidden";

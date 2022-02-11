@@ -6,10 +6,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>Document</title>
  <style>
- #gatto{
+ #fufi{
  visibility: hidden;
  }
- #cane {
+ #boh {
  visibility: hidden;
  }
  </style>
@@ -22,9 +22,9 @@
  <p id="out">Times</p>
  <p id="nclick">Clicks</p>
  <p id="demolition">3</p>
- <p id="cane">13</p>
+ <p id="boh">13</p>
 
- <button id="gatto" type="button" onclick="count()">CLICCAMI!</button>
+ <button id="fufi" type="button" onclick="count()">Push Me</button>
 
  <script>
  let i = 0;
@@ -53,9 +53,9 @@
  function fill() {
  clearInterval(myInterval)
  clearInterval(Pollo)
- document.getElementById("demolition").innerHTML = "VIA!";
- document.getElementById("gatto").style.visibility = "visible";
- document.getElementById("cane").style.visibility = "visible";
+ document.getElementById("demolition").innerHTML = "Via!";
+ document.getElementById("fufi").style.visibility = "visible";
+ document.getElementById("boh").style.visibility = "visible";
  
  }
 
@@ -65,8 +65,8 @@
  }
 
  function Rubik() {
- document.getElementById("cane").style.visibility = "hidden";
- document.getElementById("gatto").style.visibility = "hidden";
+ document.getElementById("boh").style.visibility = "hidden";
+ document.getElementById("fufi").style.visibility = "hidden";
  document.getElementById("demolition").style.visibility = "hidden";
  document.getElementById("out").style.visibility = "hidden";
  }

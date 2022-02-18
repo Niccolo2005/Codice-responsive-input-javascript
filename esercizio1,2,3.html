@@ -8,7 +8,10 @@
 </head>
 
 <body>
- <div id="example"></div>
+ <div id="esempio"></div>
+ <div id="esempio2"></div>
+ <div id="somma"></div>
+ <div id="media"></div>
  <script>
 
 
@@ -19,8 +22,18 @@
      dieciNumeri.push(i);
      }
 
- document.getElementById("example").innerHTML = dieciNumeri;
+ document.getElementById("esempio").innerHTML = dieciNumeri;
+ 
 
+ let numeri=[];
+
+ for(let i=0; i<8; i++){
+    numeri.push(i); 
+ }
+
+ document.getElementById("esempio2").innerHTML = numeri;
+ document.getElementById("somma").innerHTML = numeri[0] + numeri[1]  + numeri[2] + numeri[3] + numeri[4] + numeri[5] + numeri[6] + numeri[7] ;
+ document.getElementById("media").innerHTML = (numeri[0] + numeri[1]  + numeri[2] + numeri[3] + numeri[4] + numeri[5] + numeri[6] + numeri[7]) / 8 ;
  </script>
 </body>
 </html>
